@@ -6,6 +6,24 @@
     justify-content: flex-end;
 
     &__container {
-        margin: 10px;
+        margin: 10px; 
+        border: red solid 1px;
     }
+
+    &__title {
+        font-size: 36px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        align-self: flex-end;
+    }
+}
+
+
+.menu {
+    background-color: blue;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
