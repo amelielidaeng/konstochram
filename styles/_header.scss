@@ -1,29 +1,44 @@
 .header {
     height: 200px; 
-    background-color: lightpink;
+    background-color: #454D46;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 
-    &__container {
-        margin: 10px; 
-        border: red solid 1px;
+    &__title-box {
+        display: flex;
     }
 
     &__title {
-        font-size: 36px;
-    }
-
-    &__subtitle {
         font-size: 24px;
-        align-self: flex-end;
     }
 }
 
+.main-title {
+    font-size: 36px; 
+    color: white; //for now - needs styling and maybe a border
+}
+
+.menu-link {
+    color: white; //for now - needs styling and maybe a border
+}
+
+//is it due to the span that I can't style the link color in the same class?
+
+.list__item {
+    padding: 5px 10px 5px 10px;
+}
 
 .menu {
-    background-color: blue;
+    background-color: #454D46;
+    opacity: 80%;
     height: 50px;
     display: flex;
     align-items: center;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+    }
 }
