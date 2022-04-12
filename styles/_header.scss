@@ -1,0 +1,11 @@
+.header {
+    height: 200px; 
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__container {
+        margin: 10px;
+    }
+}

@@ -1,4 +1,6 @@
-* {
-    margin: auto; 
-    box-sizing: border-box;
-}
+@import "default";
+@import "forgylleriet";
+@import "kontakt";
+@import "ramverkstad";
+@import "header";
+@import "landing";
