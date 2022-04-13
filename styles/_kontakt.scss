@@ -1,0 +1,13 @@
+.kontakt {
+    border: solid 1px blue;
+
+    &__open {
+        border: 1px solid red;
+        padding: 10px;
+    }
+
+    &__info {
+        border: 1px solid purple;
+        padding: 10px;
+    }
+}
