@@ -11,8 +11,11 @@ $desktop: 1200px;
     }
 
     &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         max-width: 675px;
-        min-height: 400px;
+        min-height: 500px;
         margin-top: 20px;
         padding: 10px;
     }
