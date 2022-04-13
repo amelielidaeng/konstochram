@@ -1,10 +1,12 @@
+$mobile: 320px; //default
+$tablet: 800px; 
+$desktop: 1200px;
+
 .landing {
-    max-width: 900px;
+    max-width: 700px;
     margin-top: 10px;
 
     &__title  {
-    //    min-height: 80px;
-        border: solid blue 1px;
         margin-top: 10px;
     }
 
@@ -16,9 +18,29 @@
     }
 
     &__container {
-        min-height: 700px;
-        border: solid red 1px;
         margin-top: 10px;
+        margin: auto 0; 
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .landing {
+        max-width: 800px;
+    }
+
+    .landing__grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .landing {
+        max-width: 1200px;
+    }
+    .landing__grid {
+        grid-template-columns: auto auto auto;
     }
 }
 
