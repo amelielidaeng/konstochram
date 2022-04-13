@@ -1,26 +1,35 @@
+$mobile: 320px; //default
+$tablet: 800px; 
+$desktop: 1200px;
+
 .header {
     height: 200px; 
     background-color: #454D46;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Cinzel", serif; 
+    text-align: center;
+//    text-shadow: 1px 1px lightgrey;
+
 
     &__title-box {
         display: flex;
     }
 
     &__title {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
 .main-title {
-    font-size: 36px; 
+    font-size: 32px; 
     color: white; //for now - needs styling and maybe a border
 }
 
 .menu-link {
     color: white; //for now - needs styling and maybe a border
+    font-size: 23px;
 }
 
 //is it due to the span that I can't style the link color in the same class?
@@ -41,4 +50,13 @@
         justify-content: space-between;
         width: 900px;
     }
+
+    &__button {
+        border: none;
+    }
+}
+
+.menu__button:hover {
+    background-color: #454D46;
+    opacity: 90%;
 }

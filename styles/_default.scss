@@ -1,9 +1,14 @@
+$mobile: 320px; //default
+$tablet: 800px; 
+$desktop: 1200px;
+
 * {
     margin: 0 auto; 
     box-sizing: border-box;
     max-width: 1600px;
     color: #333;
     line-height: 125%;
+    font-family: "Lora", serif;
 }
 
 body {
@@ -17,14 +22,19 @@ a {
 
 .button {
     padding: 5px 10px 5px 10px;
-    margin: 0 10px 0 10px;
+    margin: 0 5px 0 5px;
+    font-size: 14px;
 }
 
-/*
-.container {
-    max-width: 700px;
-    min-height: 700px;
-    border: solid 1px grey;
-    margin-top: 10px;
+@media screen and (min-width: $tablet) {
+    .button {
+        font-size: 16px; 
+        margin: 0 10px 0 10px;
+    }
 }
-*/
+
+@media screen and (min-width: $desktop) {
+    .button {
+        font-size: 18px;
+    }
+}
