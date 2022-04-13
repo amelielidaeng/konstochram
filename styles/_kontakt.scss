@@ -6,14 +6,18 @@ $desktop: 1200px;
     max-width: 700px;
 
     &__open {
-        width: 300px;
+        width: 100%;
         margin-bottom: 20px;
+        padding-left: 10px;
+        border: red solid 1px;
     }
 
     &__info {
-        width: 300px;
+        width: 100%;
         margin-bottom: 20px;
         padding-top: 10px;
+        padding-left: 10px;
+        border: red solid 1px;
     }
 
     &__list {
@@ -23,10 +27,10 @@ $desktop: 1200px;
     }
 
     &__map {
-        max-width: 650px;
+        max-width: 800px;
+        height: 300px;
         margin-bottom: 20px;
-        padding: 10px;
-        border: 1px solid pink;
+        padding-top: 10px;
     }
 }
 
@@ -35,8 +39,15 @@ $desktop: 1200px;
     padding-bottom: 10px;
 }
 
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: 500px) {
     .kontakt {
         display: flex;
+    }
+
+}
+
+@media screen and (min-width: $tablet) {
+    .kontakt__map {
+        height: 400px;
     }
 }
