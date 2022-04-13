@@ -42,11 +42,31 @@ a {
 }
 
 .grid-item {
-    width: 300px;
+    max-width: 280px;
     border: solid red 1px;
 }
 
 img {
-    max-width: 300px;
+    max-width: 280px;
     height: auto;
+}
+
+@media screen and (min-width: $tablet) {
+    img {
+        max-width: 350px;
+    }
+
+    .grid-item {
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    img {
+        max-width: 380px;
+    }
+
+    .grid-item {
+        max-width: 380px;
+    }
 }
