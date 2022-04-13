@@ -1,13 +1,42 @@
+$mobile: 320px; //default
+$tablet: 800px; 
+$desktop: 1200px;
+
 .kontakt {
-    border: solid 1px blue;
+    max-width: 700px;
 
     &__open {
-        border: 1px solid red;
-        padding: 10px;
+        width: 300px;
+        margin-bottom: 20px;
     }
 
     &__info {
-        border: 1px solid purple;
+        width: 300px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__map {
+        max-width: 650px;
+        margin-bottom: 20px;
         padding: 10px;
+        border: 1px solid pink;
+    }
+}
+
+.list-distance {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: $tablet) {
+    .kontakt {
+        display: flex;
     }
 }

@@ -8,31 +8,29 @@ $desktop: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Cinzel", serif; 
     text-align: center;
-//    text-shadow: 1px 1px lightgrey;
 
 
     &__title-box {
         display: flex;
+        flex-direction: column;
     }
 
     &__title {
         font-size: 22px;
+        color: white;
+        font-family: "Cinzel", serif; 
     }
 }
 
 .main-title {
     font-size: 32px; 
-    color: white; //for now - needs styling and maybe a border
+    color: white;
 }
 
-.menu-link {
-    color: white; //for now - needs styling and maybe a border
-    font-size: 23px;
+.header-link:hover {
+    opacity: 50%;
 }
-
-//is it due to the span that I can't style the link color in the same class?
 
 .list__item {
     padding: 5px 10px 5px 10px;
