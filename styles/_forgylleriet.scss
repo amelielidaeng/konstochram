@@ -12,7 +12,9 @@ $desktop: 1200px;
 }
 
 .forgylleriet__grid {
-    max-width: 900px;
+    max-width: 750px;
+    min-height: 950px;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: $tablet) {
@@ -20,6 +22,7 @@ $desktop: 1200px;
         display: grid; 
         grid-template-columns: auto auto;
         grid-template-rows: auto;
+        grid-column-gap: 5px;
     }
 }
 /*
